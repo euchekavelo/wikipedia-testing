@@ -39,11 +39,9 @@ public class NavigationTest extends BaseWebTest {
     }
 
     @Test(priority = 4, description = "Verify random article navigation")
-    public void testRandomArticle() throws InterruptedException {
+    public void testRandomArticle() {
         String initialUrl = driver.getCurrentUrl();
         homePage.clickRandomArticle();
-
-        //Thread.sleep(3000);
 
         String newUrl = driver.getCurrentUrl();
         Assert.assertNotEquals(initialUrl, newUrl, "Should navigate to a different page");

@@ -33,11 +33,6 @@ public class LanguageTest extends BaseMobileTest {
     @Test(priority = 2, description = "Verify search works in default language")
     public void testSearchInDefaultLanguage() throws InterruptedException {
         driver.navigate().back();
-        //Thread.sleep(1000);
-
-        /*MainPage mainPage = new MainPage(driver);
-        mainPage.clickSearchContainer();*/
-
         Thread.sleep(1000);
 
         SearchPage searchPage = new SearchPage(driver);
